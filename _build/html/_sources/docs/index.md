@@ -13,4 +13,4 @@ Numpy and Pandas offer great functionalities to deal with large amounts of data.
 
 Scipy offers a plethora of analysis tools from data fitting and signal processing to simply having a lot of physics constants ready for import. It can also solve differentials and integrals analytically. And with some extra latex syntax we can also have a visual representation of the equations being solved.
 
-In addition to those we will go over how to define your own functions and use python in a way that isn't overwhelming but augments your studies in physics.
+In addition to those we will go over how to define your own functions and use python in a way that isn't overwhelming but augments your studies in physics. However, **Our main focus** is to get you started on doing stuff in python. Which is why the first couple of sections on this page are going to be devoted to simply [quick and dirty](getting-started) tips and tricks to get you going without any prerequisite knowledge.
