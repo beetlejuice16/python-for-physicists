@@ -1,27 +1,16 @@
-# Scientific Python QuickStart 
+# Python for Physicists
+# Motivation
+We have been studying physics for about 6 years each. During that time we were both exposed to programming in different ways. For us that exposure was quite abrupt, as we were introduced to programming without any prior knowledge and were told to produce results. While this cold approach can make you learn a lot in a short time, it comes at the cost of not understanding some basic principles of writing readable and modular code.
 
-This is a short sequence of lectures on Python programming for scientific
-work, written by [Thomas J.  Sargent](http://www.tomsargent.com/) and [John
-Stachurski](https://johnstachurski.net/).
+In addition to teaching some basics to make navigating and writing code easier we also want to show some ways to make plotting and calculations more seemless. We will mainly be using the following libraries:
 
-```{note}
-These lectures were built using the new Sphinx-based [Jupyter Book
-2.0](https://beta.jupyterbook.org/intro.html) tool set, as part of the
-[ExecutableBookProject](https://ebp.jupyterbook.org/en/latest/).  They are
-intended mainly as a demonstration of these tools.
-Instructions for how to build them from source can be found in the Jupyter
-Book documentation.
-```
+* Numpy
+* Scipy
+* Matplotlib
+* Pandas
 
+Numpy and Pandas offer great functionalities to deal with large amounts of data. While numpy is more focused on arrays and matrices and makes calculations with those easy and quick, pandas is easier to navigate when needing to use labeled data and group a lot of different datapoints in table (called a dataframe in pandas).
 
-These lectures are a mini-version of a [longer
-series](https://executablebooks.github.io/quantecon-example/docs/index.html)
-of lectures, also built using Jupyter Book 2.0.  That series contains more
-features and applications but also requires more libraries and takes longer to
-run.  
+Scipy offers a plethora of analysis tools from data fitting and signal processing to simply having a lot of physics constants ready for import. It can also solve differentials and integrals analytically. And with some extra latex syntax we can also have a visual representation of the equations being solved.
 
-Both lecture series are taken from a [more complete set of
-lectures](https://python.quantecon.org) on open source computing hosted by
-[QuantEcon](https://quantecon.org).
-
-
+In addition to those we will go over how to define your own functions and use python in a way that isn't overwhelming but augments your studies in physics.

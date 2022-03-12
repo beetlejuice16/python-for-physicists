@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scientific Python QuickStart &#8212; Python for Physicists</title>
+    <title>Python for Physicists &#8212; Python for Physicists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -154,6 +154,24 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Python for Physicists
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -161,39 +179,51 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Scientific Python QuickStart</h1>
+                <h1>Python for Physicists</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Python for Physicists
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="scientific-python-quickstart">
-<h1>Scientific Python QuickStart<a class="headerlink" href="#scientific-python-quickstart" title="Permalink to this headline">¶</a></h1>
-<p>This is a short sequence of lectures on Python programming for scientific
-work, written by <a class="reference external" href="http://www.tomsargent.com/">Thomas J.  Sargent</a> and <a class="reference external" href="https://johnstachurski.net/">John
-Stachurski</a>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>These lectures were built using the new Sphinx-based <a class="reference external" href="https://beta.jupyterbook.org/intro.html">Jupyter Book
-2.0</a> tool set, as part of the
-<a class="reference external" href="https://ebp.jupyterbook.org/en/latest/">ExecutableBookProject</a>.  They are
-intended mainly as a demonstration of these tools.
-Instructions for how to build them from source can be found in the Jupyter
-Book documentation.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="python-for-physicists">
+<h1>Python for Physicists<a class="headerlink" href="#python-for-physicists" title="Permalink to this headline">¶</a></h1>
 </div>
-<p>These lectures are a mini-version of a <a class="reference external" href="https://executablebooks.github.io/quantecon-example/docs/index.html">longer
-series</a>
-of lectures, also built using Jupyter Book 2.0.  That series contains more
-features and applications but also requires more libraries and takes longer to
-run.</p>
-<p>Both lecture series are taken from a <a class="reference external" href="https://python.quantecon.org">more complete set of
-lectures</a> on open source computing hosted by
-<a class="reference external" href="https://quantecon.org">QuantEcon</a>.</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="motivation">
+<h1>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
+<p>We have been studying physics for about 6 years each. During that time we were both exposed to programming in different ways. For us that exposure was quite abrupt, as we were introduced to programming without any prior knowledge and were told to produce results. While this cold approach can make you learn a lot in a short time, it comes at the cost of not understanding some basic principles of writing readable and modular code.</p>
+<p>In addition to teaching some basics to make navigating and writing code easier we also want to show some ways to make plotting and calculations more seemless. We will mainly be using the following libraries:</p>
+<ul class="simple">
+<li><p>Numpy</p></li>
+<li><p>Scipy</p></li>
+<li><p>Matplotlib</p></li>
+<li><p>Pandas</p></li>
+</ul>
+<p>Numpy and Pandas offer great functionalities to deal with large amounts of data. While numpy is more focused on arrays and matrices and makes calculations with those easy and quick, pandas is easier to navigate when needing to use labeled data and group a lot of different datapoints in table (called a dataframe in pandas).</p>
+<p>Scipy offers a plethora of analysis tools from data fitting and signal processing to simply having a lot of physics constants ready for import. It can also solve differentials and integrals analytically. And with some extra latex syntax we can also have a visual representation of the equations being solved.</p>
+<p>In addition to those we will go over how to define your own functions and use python in a way that isn’t overwhelming but augments your studies in physics.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
