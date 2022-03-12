@@ -1,3 +1,5 @@
+```{tableofcontents}```
+
 # Python for Physicists
 # Motivation
 We have been studying physics for about 6 years each. During that time we were both exposed to programming in different ways. For us that exposure was quite abrupt, as we were introduced to programming without any prior knowledge and were told to produce results. While this cold approach can make you learn a lot in a short time, it comes at the cost of not understanding some basic principles of writing readable and modular code.

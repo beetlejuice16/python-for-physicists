@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python for Physicists &#8212; Python for Physicists</title>
+    <title>What is meant by type? &#8212; Python for Physicists</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -50,7 +50,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quick and Dirty tips" href="getting_started.html" />
+    <link rel="next" title="Test" href="test.html" />
+    <link rel="prev" title="Quick and Dirty tips" href="getting_started.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -82,15 +83,20 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="getting_started.html">
    Quick and Dirty tips
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="types.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    What is meant by type?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="test.html">
+   Test
   </a>
  </li>
 </ul>
@@ -134,7 +140,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/types.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -166,12 +172,17 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Python for Physicists
+   What is meant by type?
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#motivation">
-   Motivation
+  <a class="reference internal nav-link" href="#defining-the-type">
+   Defining the type
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integers">
+   Integers
   </a>
  </li>
 </ul>
@@ -184,7 +195,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Python for Physicists</h1>
+                <h1>What is meant by type?</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -196,12 +207,17 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   Python for Physicists
+   What is meant by type?
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#motivation">
-   Motivation
+  <a class="reference internal nav-link" href="#defining-the-type">
+   Defining the type
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integers">
+   Integers
   </a>
  </li>
 </ul>
@@ -213,25 +229,40 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <p><code class="docutils literal notranslate"><span class="pre">{tableofcontents}</span></code></p>
-<div class="tex2jax_ignore mathjax_ignore section" id="python-for-physicists">
-<h1>Python for Physicists<a class="headerlink" href="#python-for-physicists" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="what-is-meant-by-type">
+<span id="types"></span><h1>What is meant by type?<a class="headerlink" href="#what-is-meant-by-type" title="Permalink to this headline">¶</a></h1>
+<p>Before understanding what a type is, one should know the concept of a variable.</p>
+<p>A variable in programing can be compared to a box that holds a piece of information. Variables are very useful, as they can store information that can be used to solve an problem.</p>
+<p>Usually to use these variables, one should define what type of variable it is. Some of the most used types are:</p>
+<ol class="simple">
+<li><p>Integers <code class="docutils literal notranslate"><span class="pre">int</span></code></p></li>
+<li><p>Float <code class="docutils literal notranslate"><span class="pre">float</span></code></p></li>
+<li><p>Strings <code class="docutils literal notranslate"><span class="pre">str</span></code></p></li>
+<li><p>Booleans <code class="docutils literal notranslate"><span class="pre">bool</span></code></p></li>
+<li><p>Lists <code class="docutils literal notranslate"><span class="pre">list</span></code></p></li>
+<li><p>Sets <code class="docutils literal notranslate"><span class="pre">set</span></code></p></li>
+<li><p>Dictionaries <code class="docutils literal notranslate"><span class="pre">dict</span></code></p></li>
+</ol>
+<p>Most programing languages don’t allow the change of a type of variable. Once set it can no longer be changed. However, in python this isn’t the case. One can change an int to a list to a bool to a list again. This isn’t recommended since it makes the code confusing, and slows down the script.</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="motivation">
-<h1>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h1>
-<p>We have been studying physics for about 6 years each. During that time we were both exposed to programming in different ways. For us that exposure was quite abrupt, as we were introduced to programming without any prior knowledge and were told to produce results. While this cold approach can make you learn a lot in a short time, it comes at the cost of not understanding some basic principles of writing readable and modular code.</p>
-<p>In addition to teaching some basics to make navigating and writing code easier we also want to show some ways to make plotting and calculations more seemless. We will mainly be using the following libraries:</p>
-<ul class="simple">
-<li><p>Numpy</p></li>
-<li><p>Scipy</p></li>
-<li><p>Matplotlib</p></li>
-<li><p>Pandas</p></li>
-</ul>
-<p>Numpy and Pandas offer great functionalities to deal with large amounts of data. While numpy is more focused on arrays and matrices and makes calculations with those easy and quick, pandas is easier to navigate when needing to use labeled data and group a lot of different datapoints in table (called a dataframe in pandas).</p>
-<p>Scipy offers a plethora of analysis tools from data fitting and signal processing to simply having a lot of physics constants ready for import. It can also solve differentials and integrals analytically. And with some extra latex syntax we can also have a visual representation of the equations being solved.</p>
-<p>In addition to those we will go over how to define your own functions and use python in a way that isn’t overwhelming but augments your studies in physics. However, <strong>our main focus</strong> is to get you started on doing stuff in python. Which is why the first couple of sections on this page are going to be devoted to <a class="reference internal" href="getting_started.html"><span class="doc std std-doc">simple tips and tricks</span></a> to get you going without any prerequisite knowledge.</p>
-<div class="toctree-wrapper compound">
+<div class="tex2jax_ignore mathjax_ignore section" id="defining-the-type">
+<h1>Defining the type<a class="headerlink" href="#defining-the-type" title="Permalink to this headline">¶</a></h1>
+<p>In Python defining the type of variable isn’t done that often. However, it is recommended to define the type of the variable once you set it. This has multiple upsides in Python:</p>
+<ol class="simple">
+<li><p>More readable scripts. Which is something to consider, especially when working in a group where multiple people are going to read the code.</p></li>
+<li><p>Scripts run faster as Python doesn’t need to check the type of the variable and can just use what you gave it.</p></li>
+</ol>
+<p>To define the type of a variable it is as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">4.2</span>
+<span class="n">my_bool</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">true</span>
+<span class="n">my_list</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</pre></div>
 </div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="integers">
+<h1>Integers<a class="headerlink" href="#integers" title="Permalink to this headline">¶</a></h1>
+<p>Like it name suggests, an integer is</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -258,11 +289,18 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="getting_started.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="getting_started.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Quick and Dirty tips</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="test.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quick and Dirty tips</p>
+        <p class="prev-next-title">Test</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
