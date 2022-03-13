@@ -26,7 +26,8 @@ In Python defining the type of variable isn't done that often. However, it is re
 
 To define the type of a variable it is as follows:
 
-```python
+<!-- you could change python to {code-cell} and it will be runnable and have those variables saved for the page  -->
+```python 
 x: int = 3
 y: float = 4.2
 my_bool: bool = true

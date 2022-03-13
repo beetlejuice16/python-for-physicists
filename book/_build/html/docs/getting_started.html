@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="What is meant by type?" href="types.html" />
-    <link rel="prev" title="Python for Physicists" href="index.html" />
+    <link rel="prev" title="Motivation" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -214,44 +214,74 @@ const thebe_selector_output = ".output, .cell_output"
 <p>If you were introduced to python in a class you will probably have heard or seen people use a “Jupyter Notebook”. This is basically a tool that allows you to run python code inside of “cells” instead of having to write a script and run it from you command line. It is a very convenient tool and will basically cover all your needs unless you decide to dive a lot deeper into programming.</p>
 <hr class="docutils" />
 <p>Let’s start with a basic problem. You have some <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> data and you want to plot it to see how it looks. For that you need 1 maybe 2 things at most. First you need to <em>import</em> the <em>libraries</em> you want to use. These are essentially extensions to the barebones python that you have and allow to simply tell it to do things instead of writing all the procedures from scratch. So to start we need to import the plotting library (matplotlib)</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
+</div>
+</div>
 </div>
 <p>Don’t worry much about the pyplot part. All you need to know for now is that you have <em>imported</em> your plotting library. This contains all the tools you need to plot. And by saying <code class="docutils literal notranslate"><span class="pre">as</span> <span class="pre">plt</span></code> you have essentially told your notebook that instead of always writing <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> everytime you want to use it you will simply write <code class="docutils literal notranslate"><span class="pre">plt</span></code>.</p>
 <p>Now let’s do a quick example to show what functionalities we have uncovered with this one line of code. Let’s say you have the following <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> data. <span class="math notranslate nohighlight">\(x:{0,1,2,3,4,5}\)</span> and <span class="math notranslate nohighlight">\(y:{3,4,5,6,7}\)</span> These are the data points <span class="math notranslate nohighlight">\((x,y)\)</span> you want to plot. So there are a few steps you need to do: the first is to tell your notebook what your data is:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
 </pre></div>
 </div>
+</div>
+</div>
 <p>Notice that in python when you want to give a collection of data you have to surround it with square brackets ‘[.]’ and separate the data by commas ‘,’. What we have created here are called lists, but for now you don’t need to know more about what they are. To plot this all you have to do is the following:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>And this is what you will see.</p>
-<div class="figure align-default">
-<img alt="../_images/Example1.png" src="../_images/Example1.png" />
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f2ba0aad5b0&gt;]
+</pre></div>
+</div>
+<img alt="../_images/getting_started_5_1.png" src="../_images/getting_started_5_1.png" />
+</div>
+</div>
+<p>And your plot will be ready!</p>
 <p>As you may have noticed this is pretty barebones so we can add a few lines of code to make it look somewhat more presentable.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;My Plot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Now we have labels on our axis and a title.</p>
-<div class="figure align-default">
-<img alt="../_images/Example2.png" src="../_images/Example2.png" />
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;My Plot&#39;)
+</pre></div>
+</div>
+<img alt="../_images/getting_started_7_1.png" src="../_images/getting_started_7_1.png" />
+</div>
+</div>
+<p>Now we have labels on our axis and a title.</p>
 <p>However it could just look prettier overall. There are a lot of parameters one could tweak but the easiest and quickest way to do this is to set the style as such</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-darkgrid&#39;</span><span class="p">)</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-darkgrid&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;My Plot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="figure align-default">
-<img alt="../_images/Example3.png" src="../_images/Example3.png" />
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;My Plot&#39;)
+</pre></div>
+</div>
+<img alt="../_images/getting_started_9_1.png" src="../_images/getting_started_9_1.png" />
+</div>
 </div>
 </div>
 
@@ -284,7 +314,7 @@ const thebe_selector_output = ".output, .cell_output"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Python for Physicists</p>
+            <p class="prev-next-title">Motivation</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="types.html" title="next page">
