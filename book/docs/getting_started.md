@@ -20,7 +20,7 @@ When you first want to use python for any sort of physics problem it will probab
 * Fitting data to a curve.
 * Plotting a visualization of the data you have.
 
-You've probably done some plotting in something like excel or google sheets before and it is a quick and easy way to do that. However, python has an extensive library of tools that make your visualizations much more appealing. 
+You've probably done some plotting in something like excel or google sheets before and it is a quick and easy way to do that. However, python has an extensive library of tools that make your visualizations much more appealing.
 
 The amount of tools might seem daunting at first, so this section is going to be concerned with *how to use* these tools and not with how they work. We will also offer a quick template into which you can copy your own (x,y) data into and it will do some basic visualization of it.
 
@@ -51,6 +51,7 @@ Notice that in python when you want to give a collection of data you have to sur
 ```{code-cell}
 plt.plot(x, y)
 ```
+
 And your plot will be ready!
 
 As you may have noticed this is pretty barebones so we can add a few lines of code to make it look somewhat more presentable.
@@ -61,6 +62,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.title('My Plot')
 ```
+
 Now we have labels on our axis and a title.
 
 However it could just look prettier overall. There are a lot of parameters one could tweak but the easiest and quickest way to do this is to set the style as such
