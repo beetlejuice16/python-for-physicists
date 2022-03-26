@@ -1,4 +1,5 @@
 (types)=
+
 # What is meant by type?
 
 Before understanding what a type is, one should know the concept of a variable. 
